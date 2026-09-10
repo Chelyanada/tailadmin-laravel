@@ -1,4 +1,4 @@
-@extends('frontend.layout');
+@extends('frontend.layout')
 
 @section('content')
   <section id="hero" class="hero-bg relative h-screen flex items-center justify-start text-white">
