@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ShowcaseController;
 
 // Locale Switch Route
 Route::get('/locale/{locale}', [LocaleController::class, 'switch'])->name('locale.switch');
-use App\Http\Controllers\DashboardController;
 
 //frontend
 Route::get('/', function () {
@@ -15,6 +16,8 @@ Route::get('/', function () {
 // dashboard pages
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
+// showcase pages
+Route::get('/showcase', [ShowcaseController::class, 'index']);
 // calender pages
 // Route::get('/calendar', function () {
 //     return view('pages.calender', ['title' => 'Calendar']);
