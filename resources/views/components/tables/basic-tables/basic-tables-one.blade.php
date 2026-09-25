@@ -104,33 +104,32 @@
                     <tr class="border-b border-gray-100 dark:border-gray-800">
                         <th class="px-5 py-3 text-start sm:px-6">
                             <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                User
-                            </p>
-                        </th>
-                        <th class="px-5 py-3 text-start sm:px-6">
-                            <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
                                 Project Name
                             </p>
                         </th>
                         <th class="px-5 py-3 text-start sm:px-6">
                             <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                Team
+                                Location
                             </p>
                         </th>
                         <th class="px-5 py-3 text-start sm:px-6">
                             <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                Status
+                                Badge
                             </p>
                         </th>
                         <th class="px-5 py-3 text-start sm:px-6">
                             <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                Budget
+                                Image
+                            </p>
+                        </th>
+                        <th class="px-5 py-3 text-start sm:px-6">
+                            <p class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
+                                Aksi
                             </p>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <template x-for="order in orders" :key="order.id">
                         <tr class="border-b border-gray-100 dark:border-gray-800">
                             <td class="px-5 py-4 sm:px-6" colspan="1">
                                 <div class="flex items-center gap-3">
@@ -162,7 +161,6 @@
                                 <p class="text-gray-500 text-theme-sm dark:text-gray-400" x-text="order.budget"></p>
                             </td>
                         </tr>
-                    </template>
                 </tbody>
             </table>
         </div>
